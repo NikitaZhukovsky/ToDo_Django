@@ -31,7 +31,7 @@ def signup_user(request):
 
 def current_todos(request):
     todos = Todo.objects.filter(user=request.user, datecompleted__isnull=True)
-    return render(request, 'todo/current_todos.html', {'todos':todos})
+    return render(request, 'todo/current_todos.html', {'todos': todos})
 
 
 def logout_user(request):
@@ -97,6 +97,6 @@ def delete_todo(request, todo_pk):
 
 def completed_todos(request):
     todos = Todo.objects.filter(user=request.user, datecompleted__isnull=False).order_by('-datecompleted')
-    return render(request, 'todo/completed_todos.html', {'todos':todos})
+    return render(request, 'todo/completed_todos.html', {'todos': todos})
 
 
