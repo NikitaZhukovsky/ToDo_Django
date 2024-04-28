@@ -16,9 +16,8 @@ ToDo - Django
 • PostgreSQL database  
 
 # PIP INSTALL   
-• Django    
-• Django-environ   
-• Psycopg 2
+• cd todowoo  
+• pip install -r requirements.txt  
 
 # Installation
 Clone the repo with
